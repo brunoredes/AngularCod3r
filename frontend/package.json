@@ -9,15 +9,18 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:ci": "jest -ci --runInBand",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "postinstall": "ngcc"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~10.1.4",
+    "@angular/cdk": "^10.2.7",
     "@angular/common": "~10.1.4",
     "@angular/compiler": "~10.1.4",
     "@angular/core": "~10.1.4",
     "@angular/forms": "~10.1.4",
+    "@angular/material": "^10.2.7",
     "@angular/platform-browser": "~10.1.4",
     "@angular/platform-browser-dynamic": "~10.1.4",
     "@angular/router": "~10.1.4",
@@ -35,6 +38,7 @@
     "jest-preset-angular": "^8.3.2",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~4.0.2"
+    "typescript": "~4.0.2",
+    "webpack-bundle-analyzer": "^4.1.0"
   }
 }
