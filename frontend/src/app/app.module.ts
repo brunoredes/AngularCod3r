@@ -13,6 +13,8 @@ import { HeaderComponent } from './shared/components/template/header/header.comp
 import { FooterComponent } from './shared/components/template/footer/footer.component';
 import { NavComponent } from './shared/components/template/nav/nav.component';
 import { HomeComponent } from './modules/home/home.component';
+import { RedDirective } from './shared/directives/red.directive';
+import { NotFoundComponent } from './shared/components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HomeComponent } from './modules/home/home.component';
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    RedDirective,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

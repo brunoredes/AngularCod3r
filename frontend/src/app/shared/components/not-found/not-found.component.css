@@ -1,0 +1,32 @@
+.not-found-container {
+  width: 100%;
+  max-width: 1120px;
+  height: 70vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.not-found-container .not-found__text-error {
+  width: 100%;
+  max-width: 350px;
+  margin-right: 30px;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.not-found-container .not-found__text-error a {
+  text-decoration: none;
+  top: 1
+}
+
+.not-found-container .not-found__text-error p {
+  font-size: 15px;
+}
+
+.not-found-container img {
+  width: 30%;
+  height: 40%;
+  margin-left: 40px;
+}
