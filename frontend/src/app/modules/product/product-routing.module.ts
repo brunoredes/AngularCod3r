@@ -4,8 +4,16 @@ import { CreateComponent } from './create/create.component';
 import { ProductComponent } from './product.component';
 
 const routes: Routes = [
-  { path: '', component: ProductComponent },
-  { path: 'products/create', component: CreateComponent },
+  {
+    path: '',
+    component: ProductComponent,
+    children: [
+      {
+        path: 'create',
+        component: CreateComponent,
+      }
+    ]
+  },
 ];
 
 @NgModule({
