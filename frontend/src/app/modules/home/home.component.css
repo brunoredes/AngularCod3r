@@ -1,0 +1,17 @@
+.home__title {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.home__subtitle {
+  font-size: 1.1em;
+}
+
+.home__subtitle__first-color-angular {
+  color: rgb(221, 0, 49);
+}
+
+.home__subtitle__second-color-angular {
+  color: rgb(195, 0, 47);
+}

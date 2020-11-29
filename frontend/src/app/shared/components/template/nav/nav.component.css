@@ -1,11 +1,16 @@
-.sidenav {
+.nav-container__sidenav {
   background: #3f51b5;
   width: 200px;
 }
 
-.sidenav a {
+.nav-container__sidenav a {
   color: #fff;
 }
-.sidenav em {
+.nav-container__sidenav em {
   padding-right: 10px;
+}
+
+.nav-container__content {
+  padding: 16px;
+  background-color: #fff;
 }

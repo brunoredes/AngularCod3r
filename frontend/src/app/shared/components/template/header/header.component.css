@@ -13,10 +13,10 @@
     max-height: 32px;
 }
 
-.header .title-group {
+.header .header__title-group {
     padding-left: 20px;
 }
 
-.header .title-group em {
+.header .header__title-group em {
     padding-right: 5px;
 }
