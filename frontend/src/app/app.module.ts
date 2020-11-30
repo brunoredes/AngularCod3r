@@ -5,6 +5,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { ProductModule } from './modules/product/product.module';
@@ -15,6 +16,7 @@ import { HeaderComponent } from './core/components/template/header/header.compon
 import { FooterComponent } from './core/components/template/footer/footer.component';
 import { NavComponent } from './core/components/template/nav/nav.component';
 import { NotFoundComponent } from './core/components/not-found/not-found.component';
+import { SnackMessageService } from './shared/services/snackMessage.service';
 
 @NgModule({
   declarations: [
@@ -35,8 +37,9 @@ import { NotFoundComponent } from './core/components/not-found/not-found.compone
     MatSidenavModule,
     MatListModule,
     MatCardModule,
+    MatSnackBarModule
   ],
-  providers: [],
+  providers: [SnackMessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
