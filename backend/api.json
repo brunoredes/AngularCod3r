@@ -8,17 +8,22 @@
     {
       "id": 2,
       "name": "Notebook Asus Vivobook",
-      "price": 5400.0
+      "price": 5400
     },
     {
       "id": 3,
       "name": "Samsung S20+",
-      "price": 4800.0
+      "price": 4800
     },
     {
       "id": 4,
       "name": "Paçoca",
       "price": 0.3
+    },
+    {
+      "name": "Teste",
+      "price": "1.98",
+      "id": 16
     }
   ]
 }
