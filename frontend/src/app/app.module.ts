@@ -16,7 +16,6 @@ import { HeaderComponent } from './core/components/template/header/header.compon
 import { FooterComponent } from './core/components/template/footer/footer.component';
 import { NavComponent } from './core/components/template/nav/nav.component';
 import { NotFoundComponent } from './core/components/not-found/not-found.component';
-import { SnackMessageService } from './shared/services/snackMessage.service';
 
 @NgModule({
   declarations: [
@@ -39,7 +38,7 @@ import { SnackMessageService } from './shared/services/snackMessage.service';
     MatCardModule,
     MatSnackBarModule
   ],
-  providers: [SnackMessageService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
