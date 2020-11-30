@@ -9,11 +9,11 @@ import { MatCardModule } from '@angular/material/card';
 import { AppRoutingModule } from './app-routing.module';
 import { ProductModule } from './modules/product/product.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './modules/home/home.component';
+import { RedDirective } from './shared/directives/red.directive';
+import { HomeComponent } from './modules/home/components/home.component';
 import { HeaderComponent } from './core/components/template/header/header.component';
 import { FooterComponent } from './core/components/template/footer/footer.component';
 import { NavComponent } from './core/components/template/nav/nav.component';
-import { RedDirective } from './shared/directives/red.directive';
 import { NotFoundComponent } from './core/components/not-found/not-found.component';
 
 @NgModule({

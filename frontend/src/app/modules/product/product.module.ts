@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ProductRoutingModule } from './product-routing.module';
-import { ProductComponent } from './product.component';
-import { CreateComponent } from './create/create.component';
+import { ProductComponent } from './components/product.component';
+import { CreateComponent } from './pages/create/create.component';
 
 
 @NgModule({
