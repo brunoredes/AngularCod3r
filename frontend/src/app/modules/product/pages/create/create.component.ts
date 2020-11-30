@@ -20,5 +20,5 @@ export class CreateComponent implements OnInit {
 
   public cancel(): void {
     this._router.navigate(['/products'])
-   }
+  }
 }
