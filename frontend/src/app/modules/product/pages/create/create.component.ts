@@ -34,12 +34,17 @@ export class CreateComponent implements OnInit, OnDestroy {
   }
 
   public createProduct(): void {
-    this._productService.create(this.product)
-      .pipe(takeUntil(this._destroy))
-      .subscribe(() => {
-        this._snack.showMessage('Produto Criado');
-        this._router.navigate(['/products']);
-      });
+    try {
+      this._productService.create(this.product)
+        .pipe(takeUntil(this._destroy))
+        .subscribe(() => {
+          this._snack.showMessage('Produto Criado');
+          this._router.navigate(['/products']);
+        });
+    } catch (err) {
+      this._snack.showMessage(err);
+      console.error(err);
+    }
   }
 
   public cancel(): void {

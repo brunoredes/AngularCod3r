@@ -1,3 +1,27 @@
 .table {
     width: 100%
 }
+
+.table__actions--edit {
+    margin-right: 20px;
+}
+
+.table__actions--edit>em {
+    color: #2645f3;
+}
+
+.table__actions--edit:hover>em {
+    transition: 1s;
+    color: #2f20ba;
+    border-color: #999;
+}
+
+.table__actions--delete>em {
+    color: #e35e6b;
+}
+
+.table__actions--delete:hover>em {
+    transition: 1s;
+    color: #a03f49;
+    border-color: #fc0019;
+}

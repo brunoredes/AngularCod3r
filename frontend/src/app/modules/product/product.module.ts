@@ -16,11 +16,12 @@ import { CreateComponent } from './pages/create/create.component';
 import { ReadComponent } from './pages/read/read.component';
 import { ReadTableExampleComponent } from './read-table-example/read-table-example.component';
 import localePt from '@angular/common/locales/pt';
+import { UpdateComponent } from './pages/update/update.component';
 
 registerLocaleData(localePt);
 
 @NgModule({
-  declarations: [ProductComponent, CreateComponent, ReadComponent, ReadTableExampleComponent],
+  declarations: [ProductComponent, CreateComponent, ReadComponent, ReadTableExampleComponent, UpdateComponent],
   imports: [
     CommonModule,
     ProductRoutingModule,

@@ -11,15 +11,14 @@ import { SubscriptionLike } from 'rxjs';
 export class ReadComponent implements OnInit, OnDestroy {
 
   public products: Product[];
-  public displayedColumns = ['id', 'name', 'price'];
-  private _subscription: SubscriptionLike[] = []
+  public displayedColumns = ['id', 'name', 'price', 'action'];
+  private _subscription: SubscriptionLike[] = [];
 
   constructor(private _productService: ProductService) { }
 
   ngOnInit(): void {
     this._subscription.push(this._productService.read().subscribe((products) => {
       this.products = products;
-      console.log(products);
     }));
   }
 
