@@ -47,8 +47,4 @@ export class CreateComponent implements OnInit, OnDestroy {
     }
   }
 
-  public cancel(): void {
-    this._router.navigate(['/products']);
-  }
-
 }

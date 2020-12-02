@@ -1,0 +1,10 @@
+delete-card__form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+button {
+    margin-right: 15px;
+    margin-top: 5px;
+}

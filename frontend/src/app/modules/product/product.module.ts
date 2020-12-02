@@ -9,19 +9,30 @@ import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { MatDialogModule } from '@angular/material/dialog';
+import localePt from '@angular/common/locales/pt';
 
 import { ProductRoutingModule } from './product-routing.module';
 import { ProductComponent } from './components/product.component';
-import { CreateComponent } from './pages/create/create.component';
+import { CreateComponent } from './pages/product-create/create.component';
 import { ReadComponent } from './pages/read/read.component';
 import { ReadTableExampleComponent } from './read-table-example/read-table-example.component';
-import localePt from '@angular/common/locales/pt';
 import { UpdateComponent } from './pages/update/update.component';
+import { ProductCancelButtonComponent } from './shared/product-cancel-button/product-cancel-button.component';
+import { ProductDeleteComponent } from './pages/product-delete/product-delete.component';
 
 registerLocaleData(localePt);
 
 @NgModule({
-  declarations: [ProductComponent, CreateComponent, ReadComponent, ReadTableExampleComponent, UpdateComponent],
+  declarations: [
+    ProductComponent,
+    CreateComponent,
+    ReadComponent,
+    ReadTableExampleComponent,
+    UpdateComponent,
+    ProductCancelButtonComponent,
+    ProductDeleteComponent
+  ],
   imports: [
     CommonModule,
     ProductRoutingModule,
@@ -34,6 +45,7 @@ registerLocaleData(localePt);
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+    MatDialogModule
   ],
   providers: [{
     provide: LOCALE_ID,

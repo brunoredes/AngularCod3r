@@ -19,7 +19,7 @@ export class ProductService {
     return this._http.get<Product[]>(`${environment.baseUrl}/products`);
   }
 
-  public readById(id: string): Observable<Product> {
+  public readById(id: number): Observable<Product> {
     return this._http.get<Product>(`${environment.baseUrl}/products/${id}`);
   }
 
@@ -27,7 +27,7 @@ export class ProductService {
     return this._http.put<Product>(`${environment.baseUrl}/products/${product.id}`, product);
   }
 
-  public delete(id: string): Observable<Product> {
+  public delete(id: number): Observable<Product> {
     return this._http.delete<Product>(`${environment.baseUrl}/products/${id}`);
   }
 }
