@@ -15,9 +15,9 @@ import localePt from '@angular/common/locales/pt';
 import { ProductRoutingModule } from './product-routing.module';
 import { ProductComponent } from './components/product.component';
 import { CreateComponent } from './pages/product-create/create.component';
-import { ReadComponent } from './pages/read/read.component';
+import { ReadComponent } from './pages/product-read/read.component';
 import { ReadTableExampleComponent } from './read-table-example/read-table-example.component';
-import { UpdateComponent } from './pages/update/update.component';
+import { UpdateComponent } from './pages/product-update/update.component';
 import { ProductCancelButtonComponent } from './shared/product-cancel-button/product-cancel-button.component';
 import { ProductDeleteComponent } from './pages/product-delete/product-delete.component';
 

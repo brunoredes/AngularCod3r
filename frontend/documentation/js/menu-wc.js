@@ -111,13 +111,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/ProductModule.html" data-type="entity-link">ProductModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-ProductModule-79f8af38b1b56278de3272953860953a"' : 'data-target="#xs-components-links-module-ProductModule-79f8af38b1b56278de3272953860953a"' }>
+                                            'data-target="#components-links-module-ProductModule-e25be10a0b88fc8a7451ebe348db085c"' : 'data-target="#xs-components-links-module-ProductModule-e25be10a0b88fc8a7451ebe348db085c"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-ProductModule-79f8af38b1b56278de3272953860953a"' :
-                                            'id="xs-components-links-module-ProductModule-79f8af38b1b56278de3272953860953a"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-ProductModule-e25be10a0b88fc8a7451ebe348db085c"' :
+                                            'id="xs-components-links-module-ProductModule-e25be10a0b88fc8a7451ebe348db085c"' }>
                                             <li class="link">
                                                 <a href="components/CreateComponent.html"
                                                     data-type="entity-link" data-context="sub-entity" data-context-id="modules">CreateComponent</a>
@@ -129,6 +129,10 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                             <li class="link">
                                                 <a href="components/ProductComponent.html"
                                                     data-type="entity-link" data-context="sub-entity" data-context-id="modules">ProductComponent</a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="components/ProductDeleteComponent.html"
+                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">ProductDeleteComponent</a>
                                             </li>
                                             <li class="link">
                                                 <a href="components/ReadComponent.html"

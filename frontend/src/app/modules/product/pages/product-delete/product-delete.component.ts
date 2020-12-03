@@ -1,5 +1,4 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Product } from '../../../../core/models/product';
 import { ProductService } from '../../product.service';
@@ -19,7 +18,6 @@ export class ProductDeleteComponent implements OnInit {
     private _snack: SnackMessageService,
     private _router: Router,
     private _route: ActivatedRoute,
-    @Inject(MAT_DIALOG_DATA) public data: Product
   ) { }
 
   ngOnInit(): void {

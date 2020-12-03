@@ -4,7 +4,6 @@ import { SubscriptionLike } from 'rxjs';
 import { Product } from 'src/app/core/models/product';
 import { SnackMessageService } from 'src/app/shared/services/snackMessage.service';
 import { ProductService } from '../../product.service';
-import { ProductCancelButtonComponent } from '../../shared/product-cancel-button/product-cancel-button.component';
 
 @Component({
   selector: 'app-update',

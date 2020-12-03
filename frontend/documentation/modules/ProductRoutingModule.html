@@ -73,8 +73,9 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
 import { Routes, RouterModule } from &#x27;@angular/router&#x27;;
 import { ProductComponent } from &#x27;./components/product.component&#x27;;
-import { CreateComponent } from &#x27;./pages/create/create.component&#x27;;
-import { UpdateComponent } from &#x27;./pages/update/update.component&#x27;;
+import { CreateComponent } from &#x27;./pages/product-create/create.component&#x27;;
+import { UpdateComponent } from &#x27;./pages/product-update/update.component&#x27;;
+import { ProductDeleteComponent } from &#x27;./pages/product-delete/product-delete.component&#x27;;
 
 const routes: Routes &#x3D; [
   {
@@ -91,6 +92,10 @@ const routes: Routes &#x3D; [
       {
         path: &#x27;update/:id&#x27;,
         component: UpdateComponent,
+      },
+      {
+        path: &#x27;delete/:id&#x27;,
+        component: ProductDeleteComponent,
       },
     ]
   },

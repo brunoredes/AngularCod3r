@@ -19,16 +19,6 @@
       "id": 4,
       "name": "Paçoca",
       "price": 0.3
-    },
-    {
-      "name": "Teste",
-      "price": "1.98",
-      "id": 16
-    },
-    {
-      "name": "Caneta Faber Castel",
-      "price": "1.50",
-      "id": 17
     }
   ]
 }

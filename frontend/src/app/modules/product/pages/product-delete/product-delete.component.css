@@ -1,7 +1,8 @@
-delete-card__form {
+.delete-card__form {
     display: flex;
     flex-direction: column;
     width: 30%;
+    margin-top: 10px;
 }
 
 button {

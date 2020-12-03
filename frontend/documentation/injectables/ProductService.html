@@ -250,7 +250,7 @@
             <tr>
                 <td class="col-md-4">
                     <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>delete(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    <code>delete(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
                 </td>
             </tr>
 
@@ -280,7 +280,7 @@
                                 <tr>
                                     <td>id</td>
                                     <td>
-                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
                                     </td>
 
                                     <td>
@@ -363,7 +363,7 @@
             <tr>
                 <td class="col-md-4">
                     <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>readById(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    <code>readById(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
                 </td>
             </tr>
 
@@ -393,7 +393,7 @@
                                 <tr>
                                     <td>id</td>
                                     <td>
-                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
                                     </td>
 
                                     <td>
@@ -517,7 +517,7 @@ export class ProductService {
     return this._http.get&lt;Product[]&gt;(&#x60;${environment.baseUrl}/products&#x60;);
   }
 
-  public readById(id: string): Observable&lt;Product&gt; {
+  public readById(id: number): Observable&lt;Product&gt; {
     return this._http.get&lt;Product&gt;(&#x60;${environment.baseUrl}/products/${id}&#x60;);
   }
 
@@ -525,7 +525,7 @@ export class ProductService {
     return this._http.put&lt;Product&gt;(&#x60;${environment.baseUrl}/products/${product.id}&#x60;, product);
   }
 
-  public delete(id: string): Observable&lt;Product&gt; {
+  public delete(id: number): Observable&lt;Product&gt; {
     return this._http.delete&lt;Product&gt;(&#x60;${environment.baseUrl}/products/${id}&#x60;);
   }
 }

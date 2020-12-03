@@ -2,14 +2,14 @@
     <mat-card-title class="delete-card__title">Confirmar Exclusão do Produto</mat-card-title>
     <form class="delete-card__form">
         <mat-form-field class="delete-card__form__name">
-            <input matInput placeholder="Nome" [value]="product.name" name="name" disabled>
+            <input matInput matInput placeholder="Nome" [value]="product.name" name="name" disabled disabled>
         </mat-form-field>
         <mat-form-field>
             <input matInput placeholder="Preço (R$)" [value]="product.price" name="price" disabled>
         </mat-form-field>
     </form>
     <button mat-raised-button (click)="deleteProduct()" color="warn" class="delete__save">
-        Atualizar
+        Delete
     </button>
     &nbsp;
     <app-product-cancel-button></app-product-cancel-button>
