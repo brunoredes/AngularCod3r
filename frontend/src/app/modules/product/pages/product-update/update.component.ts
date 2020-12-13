@@ -12,7 +12,7 @@ import { ProductService } from '../../product.service';
 })
 export class UpdateComponent implements OnInit, OnDestroy {
 
-  public product: Product;
+  public product: Product = {} as Product;
   private _subscription: SubscriptionLike[] = [];
 
   constructor(
@@ -30,6 +30,7 @@ export class UpdateComponent implements OnInit, OnDestroy {
         this.product = product;
       })
     );
+
   }
 
   ngOnDestroy(): void {
@@ -39,16 +40,12 @@ export class UpdateComponent implements OnInit, OnDestroy {
   }
 
   public updateProduct(): void {
-    try {
-      this._subscription.push(this._productService
-        .update(this.product)
-        .subscribe(() => {
-          this._snack.showMessage('Produto atualizado com sucesso');
-          this._router.navigate(['/products']);
-        }));
-    } catch (err) {
-      this._snack.showMessage('Ocorreu um erro ao atualizar o produto.');
-    }
+    this._subscription.push(this._productService
+      .update(this.product)
+      .subscribe(() => {
+        this._snack.showMessage('Produto atualizado com sucesso');
+        this._router.navigate(['/products']);
+      }));
   }
 
 }

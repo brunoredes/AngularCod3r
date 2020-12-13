@@ -5,6 +5,7 @@ import { ProductService } from '../../product.service';
 import { Product } from '../../../../core/models/product';
 import { ReplaySubject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-create',
@@ -14,6 +15,13 @@ import { takeUntil } from 'rxjs/operators';
 export class CreateComponent implements OnInit, OnDestroy {
   private _destroy: ReplaySubject<any> = new ReplaySubject<any>();
 
+  public product: Product = {
+    name: '',
+    price: null
+  }
+
+  public createForm;
+
   constructor(
     private _snack: SnackMessageService,
     private _router: Router,
@@ -21,12 +29,17 @@ export class CreateComponent implements OnInit, OnDestroy {
   ) { }
 
 
-  public product: Product = {
-    name: '',
-    price: null
-  }
-
   ngOnInit(): void {
+    this.createForm = new FormGroup({
+      name: new FormControl(this.product.name, [
+        Validators.requiredTrue,
+        Validators.minLength(6)
+      ]),
+      price: new FormControl(this.product.price, [
+        Validators.requiredTrue,
+        Validators.pattern('[0-9]{1, },[0-9]{2}')
+      ])
+    });
   }
 
   ngOnDestroy(): void {

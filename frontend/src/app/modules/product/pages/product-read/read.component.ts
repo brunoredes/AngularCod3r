@@ -37,8 +37,8 @@ export class ReadComponent implements OnInit, OnDestroy {
   openDeleteModal(): void {
     this._dialog.open(ProductDeleteComponent, {
       data: {
-        name: this.product.name,
-        price: this.product.price
+        name: this.product?.name,
+        price: this.product?.price
       }
     });
   }

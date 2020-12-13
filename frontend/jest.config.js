@@ -1,5 +1,9 @@
 module.exports = {
-    preset: 'jest-preset-angular',
-    setupFilesAfterEnv: ['<rootDir>/src/setup-jest.ts'],
-    roots: ['src']
-  };
+  preset: 'jest-preset-angular',
+  setupFilesAfterEnv: ['<rootDir>/setup-jest.ts'],
+  globals: {
+    "ts-jest": {
+      "tsconfig": "./tsconfig.json"
+    }
+  }
+}

@@ -11,7 +11,7 @@ import { SnackMessageService } from '../../../../shared/services/snackMessage.se
 })
 export class ProductDeleteComponent implements OnInit {
 
-  public product: Product;
+  public product: Product = {} as Product;
 
   constructor(
     private _productService: ProductService,
@@ -24,11 +24,11 @@ export class ProductDeleteComponent implements OnInit {
     const id = parseInt(this._route.snapshot.paramMap.get('id'));
     this._productService.readById(id).subscribe((product) => {
       this.product = product;
-    })
+    });
   }
 
   deleteProduct(): void {
-    this._productService.delete(this.product.id).subscribe(() => {
+    this._productService.delete(this.product?.id).subscribe(() => {
       this._snack.showMessage('Produto Excluído');
       this._router.navigate(['/products']);
     });
