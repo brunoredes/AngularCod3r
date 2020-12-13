@@ -20,6 +20,7 @@ import { ReadTableExampleComponent } from './read-table-example/read-table-examp
 import { UpdateComponent } from './pages/product-update/update.component';
 import { ProductCancelButtonComponent } from './shared/product-cancel-button/product-cancel-button.component';
 import { ProductDeleteComponent } from './pages/product-delete/product-delete.component';
+import { LoaderModule } from 'src/app/shared/components/loader/loader.module';
 
 registerLocaleData(localePt);
 
@@ -45,7 +46,8 @@ registerLocaleData(localePt);
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    MatDialogModule
+    MatDialogModule,
+    LoaderModule,
   ],
   providers: [{
     provide: LOCALE_ID,

@@ -16,6 +16,7 @@ import { HeaderComponent } from './core/components/template/header/header.compon
 import { FooterComponent } from './core/components/template/footer/footer.component';
 import { NavComponent } from './core/components/template/nav/nav.component';
 import { NotFoundComponent } from './core/components/not-found/not-found.component';
+import { LoaderModule } from './shared/components/loader/loader.module';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { NotFoundComponent } from './core/components/not-found/not-found.compone
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    LoaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

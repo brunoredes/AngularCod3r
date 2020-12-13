@@ -13,14 +13,15 @@ import { ProductDeleteComponent } from '../product-delete/product-delete.compone
 export class ReadComponent implements OnInit, OnDestroy {
 
   public products: Product[];
-  public product: Product;
+  public product: Product = {} as Product;
   public displayedColumns = ['id', 'name', 'price', 'action'];
+  public loading = false;
   private _subscription: SubscriptionLike[] = [];
 
   constructor(
     private _productService: ProductService,
     private _dialog: MatDialog
-    ) { }
+  ) { }
 
   ngOnInit(): void {
     this._subscription.push(this._productService.read().subscribe((products) => {

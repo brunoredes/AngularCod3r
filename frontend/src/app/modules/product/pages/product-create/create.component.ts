@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { SnackMessageService } from '../../../../shared/services/snackMessage.service';
 import { ProductService } from '../../product.service';
@@ -15,10 +15,11 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class CreateComponent implements OnInit, OnDestroy {
   private _destroy: ReplaySubject<any> = new ReplaySubject<any>();
 
-  public product: Product = {
-    name: '',
-    price: null
-  }
+  @Input() product: Product = {} as Product;
+  // public product: Product = {
+  //   name: '',
+  //   price: null
+  // } as Product;
 
   public createForm;
 
