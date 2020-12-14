@@ -19,6 +19,11 @@
       "id": 4,
       "name": "Paçoca",
       "price": 0.3
+    },
+    {
+      "name": "novo_produto",
+      "price": "112",
+      "id": 5
     }
   ]
 }
